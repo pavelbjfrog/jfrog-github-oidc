@@ -44,7 +44,7 @@ jobs:
           sha256: ${{ needs.build.outputs.provenance-download-sha256 }}
                      
       - name: Setup JFrog CLI
-        uses: jfrog/setup-jfrog-cli@v3
+        uses: jfrog/setup-jfrog-cli@v4
         env:  
           JF_URL: ${{ secrets.JF_URL }}
         with:
