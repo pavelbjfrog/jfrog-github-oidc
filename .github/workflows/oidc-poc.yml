@@ -44,7 +44,7 @@ jobs:
           
   
        - name: Setup jfrog cli
-         uses: jfrog/setup-jfrog-cli@v3
+         uses: jfrog/setup-jfrog-cli@v4
          env:
           JF_URL: ${{ secrets.JF_URL }}
           JF_ACCESS_TOKEN: ${{ env.ACCESS_TOKEN }}
