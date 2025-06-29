@@ -26,7 +26,7 @@ jobs:
          run: |
           ID_TOKEN=$(curl -sLS -H "User-Agent: actions/oidc-client" -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
           "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=access-oidc-demo" | jq .value | tr -d '"')
-          echo "_TOKEN=${ID_TOKEN}" 
+          echo "ID_TOKEN=${ID_TOKEN}" 
        
        - name: Exchange token with access
          env:
