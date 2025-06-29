@@ -9,8 +9,8 @@ jobs:
   build:
      runs-on: ubuntu-latest
      env:
-      OIDC_AUDIENCE: 'jfrog-github'
-      OIDC_PROVIDER: 'github'
+      OIDC_AUDIENCE: 'workshop'
+      OIDC_PROVIDER: 'benny'
       PLATFORM_REPO: 'eks-npm'
      defaults:
       run:
