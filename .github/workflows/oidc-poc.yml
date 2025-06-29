@@ -35,7 +35,7 @@ jobs:
          run: |
           ACCESS_TOKEN=$(curl -XPOST -H "Content-Type: application/json" \
           "${ARTIFACTORY_URL}/access/api/v1/oidc/token" \
-          -d "{\"provider_name\":\"deepu19t\", \
+          -d "{\"provider_name\":\"github\", \
           \"subject_token\": \"${ID_TOKEN}\", \
           \"grant_type\": \"urn:ietf:params:oauth:grant-type:token-exchange\", \
           \"subject_token_type\": \"urn:ietf:params:oauth:token-type:id_token\"}" \
