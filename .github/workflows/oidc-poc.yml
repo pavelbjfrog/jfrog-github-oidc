@@ -40,7 +40,7 @@ jobs:
           \"grant_type\": \"urn:ietf:params:oauth:grant-type:token-exchange\", \
           \"subject_token_type\": \"urn:ietf:params:oauth:token-type:id_token\"}" \
           | jq .access_token | tr -d '"')
-          echo "ACCESS_TOKEN=${ACCESS_TOKEN}" >> $GITHUB_ENV 
+          echo "ACCESS_TOKEN=${ACCESS_TOKEN}" 
           
   
        - name: Setup jfrog cli
